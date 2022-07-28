@@ -1,0 +1,254 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 16px;
+    list-style: none;
+    box-sizing: border-box;
+}
+h3{
+    margin-top: -104px;
+    padding-top: 104px;
+    text-align: center;
+    font-size: xx-large;
+    padding-bottom: 48px;
+    font-weight: 500;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+/* ヘッダー */
+.page-header{
+    margin: 0 auto ;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: #fff;
+}
+.page-header__inner{
+    /* max-width: 1440px; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4px;
+}
+.logo{
+    font-size: 32px;
+    margin: auto 32px 6px 32px ;
+    font-weight: 400;
+}
+.menu-list{
+    display: flex;
+    text-decoration: none;
+    margin: 16px 64px;
+}
+.menu-list__item,.menu-list a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    margin-right: 8px;
+}
+/* トップ */
+.page-top{
+    position: relative;
+    margin-bottom: 104px;
+}
+.page-hero{
+    width: 100%;
+}
+.page-hero__disc a{
+    position: absolute;
+    bottom: 16px;
+    right: 32px;
+    font-size: 24px;
+    color: #fff;
+}
+.top-nav{
+    position: absolute;
+    width: 15%;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    opacity: 0.8;
+}
+.top-nav-inner{/*固定化メニュー*/
+    position: fixed;
+    padding-left: 32px;
+    margin-top: 88px;
+    z-index: 8;
+    list-style: none;
+}
+.top-nav-inner a{
+    color: black;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.top-nav-inner a:hover{
+    opacity: 0.5;
+}
+/* メインコンテンツ */
+.color-con, .meishi-con, .mojikumi-con, .dezain-con, .coding-con{
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto 256px auto;
+}
+.color-img, .meishi-img, .mojikumi-img, .dezain-img, .coding-img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+}
+.meishi-img{
+    width: 75%;
+}
+.mojikumi-list, .coding-list{
+    width: 100%;
+    max-width: 1080px;
+    display: flex;
+}
+.mojikumi-img, .coding-img{
+    margin: 0;
+    width: 50%;
+}
+.mojikumi-tag, .coding-tag{
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+.mojikumi-tag a, .coding-tag a{/*ページ飛ばす*/
+    margin-top: 20%;
+    display: inline-block;
+    color: #fff;
+    padding: 16px 72px;
+    border-radius: 8px;
+    background-color: black;
+    text-align: center;
+}
+.mojikumi-tag a:hover, .coding-tag a:hover{
+    background-color: rgb(58, 58, 58);
+}
+.coding-img{
+    width: 40%;
+    /*padding: 0 5%;*/
+}
+.mini-list{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.mini-list__wire{
+    display: flex;
+}
+.mini-img{
+    max-width: 100%;
+    margin-bottom: 16px;
+    
+}
+.mini-img2{
+    max-width: 50%;
+}
+
+/* フッター */
+footer{
+    margin-top: 128px;
+    padding: 0 16px;
+    border-top: solid 1px #dddddd;
+   
+}
+.footer-inner{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo{
+   
+    padding-top: 32px;
+}
+
+@media (max-width:1080px){
+    .main-content{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media (max-width:840px){
+    .top-nav-inner a{
+        font-size: 14px;
+    }
+    .main-content{
+        width: 90%;
+    }
+    .mojikumi-list, .coding-list{
+        flex-direction: column;
+    }
+    .mojikumi-img, .coding-img{
+        width: 100%;
+    }
+    .mojikumi-tag{
+        width: 100%;
+    }
+    .coding-img{
+        width: 80%;
+        padding: 0 10%;
+    }
+    .coding-tag{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:740px){
+    .main-content{
+        width:80%;
+    }
+    .top-nav{
+        width: 18%;
+    }
+}
+@media (max-width:600px){
+    .top-nav-inner{
+        position: static;
+        margin-top: 40px;
+    }
+    .top-nav-inner a{
+        font-size: 12px;
+    }
+    .top-nav{
+        width: 25%;
+    }
+    .main-content{
+        width: 100%;
+    }
+    .mojikumi-list, .coding-list{
+        flex-direction: column;
+    }
+    .mojikumi-img, .coding-img{
+        width: 100%;
+    }
+    .mojikumi-tag, .coding-tag{
+        width: 100%;
+    }
+    .mojikumi-tag a, .coding-tag a{
+        padding: 8px 36px;
+        font-size: smaller;
+    }
+    h3{
+        font-size: x-large;
+        padding-bottom: 32px;
+    }
+    .coding-img{
+        width: 90%;
+        justify-content: center;
+        margin: 0 auto ;
+    }
+    .logo{
+        font-size: 24px;
+    }
+    .menu-list{
+        margin: 8px auto;
+    }
+    .menu-list__item a{
+        font-size: 14px;
+    }
+}
